@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seesaw </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="title">Seesaw Simulation </div>
+    <div class="header"> 
+      
+      <div class="stats">
+        <div class="stat" id="leftW">Left: 0.0 kg</div>
+        <div class="stat" id="nextW">Next: 5 kg</div>
+        <div class="stat" id="rightW">Right: 0.0 kg</div>
+        <div class="stat" id="tiltUI">Tilt: 0.0°</div>
+      </div>
+    </div>
+
+    <div class="sim-area">
+      <div class="stage" id="stage">
+        <div class="plank" id="plank" ></div>
+        <div class="pivot-dot" aria-hidden="true"></div>
+        <div class="pivot-stand" aria-hidden="true"></div>
+        <div class="ground" aria-hidden="true"></div>
+      </div>
+
+      <div class="controls" style="display:flex;justify-content:center;">
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn" id="resetBtn"> Reset Seesaw </button>
+        </div>
+      </div>
+
+      <div class="log" id="log"></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
